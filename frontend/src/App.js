@@ -10,7 +10,7 @@ function App() {
     <Auth0Provider
     domain="proyectodelta3.us.auth0.com"
     clientId="C9bYcdsITJiWahrScgJLE3vo9O6Mwg1h"
-    redirectUri="https://warm-brushlands-80265.herokuapp.com/">
+    redirectUri="https://warm-brushlands-80265.herokuapp.com/home">
     <Routes />
   </Auth0Provider>
 
