@@ -58,7 +58,7 @@ const Navbars = () => {
             </div>
             {
             isAuthenticated ?
-            <button onClick={()=>logout({returnTo: 'https://misiontic-delta.herokuapp.com/'})}
+            <button onClick={()=>logout({returnTo: 'https://misiontic-delta.herokuapp.com/Admin'})}
             className='btn btn-primary'>{textButton}</button>:
             <button onClick={()=>loginWithRedirect()}
             className='btn btn-primary'>{textButton}</button>
