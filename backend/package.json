@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "https://github.com/smayav/ciclo3-misiontic.git",
   "scripts": {
     "start": "node App.js"
   },
 
   "engines": {
-    "node": "14.18.1"
+    "node": "14.18.1",
+    "yarn": "1.22.17"
   },
 
   "keywords": [],
