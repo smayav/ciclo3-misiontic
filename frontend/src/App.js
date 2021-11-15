@@ -10,7 +10,7 @@ function App() {
     <Auth0Provider
     domain="proyectodelta3.us.auth0.com"
     clientId="C9bYcdsITJiWahrScgJLE3vo9O6Mwg1h"
-    redirectUri="https://misiontic-delta.herokuapp.com/home">
+    redirectUri="https://misiontic-delta.herokuapp.com">
     <Routes />
   </Auth0Provider>
 
