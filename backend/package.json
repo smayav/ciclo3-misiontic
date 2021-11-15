@@ -6,6 +6,11 @@
   "scripts": {
     "start": "node App.js"
   },
+
+  "engines": {
+    "node": "14.18.1"
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,8 +21,6 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.12",
     "nodemon": "^2.0.14"
-  },
-  "engines": {
-    "node": "14.18.1"
   }
+  
 }
