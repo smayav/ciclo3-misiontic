@@ -16,8 +16,12 @@ app.use(express.json());
 const PORT = process.env.PORT || 8080
 
 //poner el servidor a escuchar
-app.listen(process.env.PORT, ()=>console.log("Servidor a su servicio en el puerto ", process.env.PORT));
-
+//app.listen(process.env.PORT, ()=>console.log("Servidor a su servicio en el puerto ", process.env.PORT));
+const main = () =>{
+    return app.listen(PORT, () =>{
+        console.log(`Servidor a su servicio en el puerto ${PORT}`);
+    })
+}
 
 //configurar conexión con mongo atlas
 const mongoose = require("mongoose");
