@@ -4,15 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
-    
     "build": "cd frontend && yarn run build",
     "install-front": "cd frontend && yarn install",
     "heroku-postbuild": "yarn run install-front && yarn run build",
     "start": "node App.js",
     "frontend": "cd frontend && yarn start"
-
-    
   },
   "keywords": [],
   "author": "",
