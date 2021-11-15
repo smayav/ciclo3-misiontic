@@ -31,7 +31,7 @@ const ListVending = () => {
      const [vending, set_vending] = useState ([])
 
      useEffect(() => {
-       Axios.get('https://misiontic-delta.herokuapp.com/api/v1/vending/list').then((res) =>{
+       Axios.get('/api/v1/vending/list').then((res) =>{
            console.log(res.data.vending);
            set_vending(res.data.vending);
        })
@@ -39,7 +39,7 @@ const ListVending = () => {
      
      const add_vending_db = () =>{
          
-         Axios.post('https://misiontic-delta.herokuapp.com/api/v1/vending/add', {
+         Axios.post('/api/v1/vending/add', {
              barcode: barcode_add,
              total_cost: total_cost_add,
              cant: cant_add,
@@ -53,11 +53,11 @@ const ListVending = () => {
      }
 
      const delete_vending = (_id) =>{
-         Axios.delete ('https://misiontic-delta.herokuapp.com/api/v1/vending/delete/'+_id)
+         Axios.delete ('/api/v1/vending/delete/'+_id)
      }
 
      const update_vending_db = (_id) =>{
-        Axios.put('https://misiontic-delta.herokuapp.com/api/v1/vending/update', {
+        Axios.put('/api/v1/vending/update', {
             _id: _id,
             barcode: barcode_update,
              total_cost: total_cost_update,

@@ -21,7 +21,7 @@ const User = () => {
      const [users, set_users] = useState ([])
 
      useEffect(() => {
-       Axios.get('https://misiontic-delta.herokuapp.com/api/v1/user/list').then((res) =>{
+       Axios.get('/api/v1/user/list').then((res) =>{
            console.log(res.data.users);
            set_users(res.data.users);
        })
@@ -29,7 +29,7 @@ const User = () => {
      
      const add_user_db = () =>{
          console.log (barcode_add + name_user_add + rol_add)
-         Axios.post('https://misiontic-delta.herokuapp.com/api/v1/user/add', {
+         Axios.post('/api/v1/user/add', {
              barcode: barcode_add,
              name_user: name_user_add,
              rol: rol_add,
@@ -38,11 +38,11 @@ const User = () => {
      }
 
      const delete_user = (_id) =>{
-         Axios.delete ('https://misiontic-delta.herokuapp.com/api/v1/user/delete/'+_id)
+         Axios.delete ('/api/v1/user/delete/'+_id)
      }
 
      const update_user_db = (_id) =>{
-        Axios.put('https://misiontic-delta.herokuapp.com/api/v1/user/update', {
+        Axios.put('/api/v1/user/update', {
             _id: _id,
             barcode: barcode_update,
             name_user: name_user_update,

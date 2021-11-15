@@ -21,7 +21,7 @@ const ListProduct = () => {
      const [products, set_products] = useState ([])
 
      useEffect(() => {
-       Axios.get('https://misiontic-delta.herokuapp.com/api/v1/product/list').then((res) =>{
+       Axios.get('/api/v1/product/list').then((res) =>{
            console.log(res.data.products);
            set_products(res.data.products);
        })
@@ -29,7 +29,7 @@ const ListProduct = () => {
      
      const add_product_db = () =>{
          console.log (barcode_add + description_add + unit_cost_add)
-         Axios.post('https://misiontic-delta.herokuapp.com/api/v1/product/add', {
+         Axios.post('/api/v1/product/add', {
              barcode: barcode_add,
              description: description_add,
              unit_cost: unit_cost_add,
@@ -38,11 +38,11 @@ const ListProduct = () => {
      }
 
      const delete_product = (_id) =>{
-         Axios.delete ('https://misiontic-delta.herokuapp.com/api/v1/product/delete/'+_id)
+         Axios.delete ('/api/v1/product/delete/'+_id)
      }
 
      const update_product_db = (_id) =>{
-        Axios.put('https://misiontic-delta.herokuapp.com/api/v1/product/update', {
+        Axios.put('/api/v1/product/update', {
             _id: _id,
             barcode: barcode_update,
             description: description_update,
