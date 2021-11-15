@@ -1,0 +1,143 @@
+:root{
+  --dark: #120903;
+  --orange: #f78537;
+  --orange-2: #ffbf69;
+  --cyan: #cbf3f0;
+  --blue: #2ec4b6;
+  --white: #ffffff;
+
+}
+
+
+.nav-link{
+  color: var(--dark);
+}
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+
+
+.bg-light{
+  background-color: var(--white) !important;
+  color:var(--dark);
+}
+
+.bg-dark{
+  background-color: var(--dark) !important;
+  
+}
+
+.bg-warning, .btn-primary{
+  background-color: var(--blue) !important;
+  color: var(--white);
+  border-color:  var(--orange);
+}
+
+.btn-primary{
+  display: block;
+}
+
+#liveAlertBtn{
+  background-color: var(--orange-2) !important;
+}
+
+.bg-danger, .btn-danger{
+  background-color: var(--orange-2) !important;
+
+  border-color:  var(--orange);
+}
+
+.title{
+  text-align: center;
+  font-size: 40px;
+  background-color: var(--dark);
+  color: var(--white);
+  border-radius: 10px;
+  
+}
+
+.btn-primary:hover{
+  border-radius: none;
+}
+.card{
+text-align: center;
+padding: auto;   
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  
+}   
+
+.container .card, .card-rol{
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px var(--cyan);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  border-width: thick;
+}
+
+
+
+.container .card:hover, .card-rol:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px var(--cyan);
+}
+
+.container .card img{
+  width: 300px;
+  height: 270px;
+  
+}
+
+.container .card-rol img{
+  width: 300px;
+  height: 270px;
+
+}
+
+.container .card h4, .card-rol h4{
+  font-weight: 600;
+}
+
+.container .card p, .card-rol p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container .card a, .card-rol a{
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--orange)
+}
+
+.navbar-nav{
+font-size: 80;
+}
+
+.nav-item-user{
+  float: right;
+}
