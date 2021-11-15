@@ -1,6 +1,8 @@
 const express = require("express");
 require("dotenv").config();
 
+const port = process.env.PORT || 8080;
+
 //creamos el servidor
 const app = express();
 
@@ -14,7 +16,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 //poner el servidor a escuchar
-app.listen(process.env.PORT, ()=>console.log("Servidor a su servicio en el puerto ", process.env.PORT));
+app.listen(port, ()=>{console.log(`Servidor a su servicio en el puerto  ${port}`);});
 
 
 //configurar conexión con mongo atlas
